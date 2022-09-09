@@ -21,7 +21,7 @@ const paths = {
     html: {
         src: 'src/*.html', dest: 'dist/',
     }, styles: {
-        src: ['src/scss/**/*.scss', 'src/scss/**/*.sass'], dest: 'dist/css/',
+        src: 'src/scss/index.scss', dest: 'dist/css/',
     }, scripts: {
         src: 'src/js/**/*.js', dest: 'dist/js/',
     }, images: {
@@ -91,7 +91,7 @@ function styles() {
             level: 2
         }))
         .pipe(rename({
-            basename: 'style', suffix: '.min'
+            basename: 'index', suffix: '.min'
         }))
         .pipe(sourcemaps.write('.'))
         .pipe(size())
