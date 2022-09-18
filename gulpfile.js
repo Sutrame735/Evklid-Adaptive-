@@ -21,9 +21,9 @@ const paths = {
     html: {
         src: 'src/*.html', dest: 'dist/',
     }, styles: {
-        src: 'src/scss/**/*.scss', dest: 'dist/css/',
+        src: 'src/scss/**/**.scss', dest: 'dist/css/',
     }, scripts: {
-        src: 'src/js/**/*.js', dest: 'dist/js/',
+        src: 'src/js/**/**.js', dest: 'dist/js/',
     }, images: {
         src: 'src/img/**', dest: 'dist/img/',
     }, fonts: {
